@@ -3,6 +3,7 @@
 \usepackage{setspace}
 \usepackage{hyperref}
 \usepackage{booktabs}
+\usepackage{longtable}
 
 \setlength{\textheight}{9in} \setlength{\topmargin}{-.5in}
 \setlength{\textwidth}{6.5in} \setlength{\oddsidemargin}{0in}
@@ -43,16 +44,165 @@
 
 \section{Description, Content, and Learning Goals}
 
-
+A continuation of COMP 151 that explores the essential data structures
+and algorithms of modern computing, including lists, stacks, queues,
+heaps, and trees. Students will design, analyze, and build Python
+programs that implement and utilize these data structures to solve
+computational problems, including a thorough survey of sorting and
+search algorithms. These theoretical constructs are complemented by
+exposure to good software development practices, including data
+abstraction via abstract data types and object-oriented software
+design. Strong emphasis is put on analyzing and evaluating how
+implementation choices made by the programmer impact overall program
+performance and maintainability.
 \subsection{Textbook}
+\label{sec:orgc3d87e3}
 
 \noindent
-Goodrich, Michael T., et. al. \textit{Data Structures and Algorithms in Python}. Wiley. Hoboken, NJ. 2013. % chktex 8
+Goodrich, Michael T. and Tamassia, Robert and Goldwasser, Michael H. \underline{Data Structures and Algorithms in Python}. Wiley. 2013. ISBN-13: 978-1-118-29027-9.
 
 
-\subsection{Software}
+\subsection{Topics}
+\label{sec:org302b48c}
+The course aims to cover chapters 1-8, parts of chapters 9-10,
+chapter 12, and parts of chapter 14 of the text. This includes, but is
+not limited to:
 
-The question and answer software \textit{Socrative} will be used on an almost daily basis. Students will need to create a free student account at \url{https://socrative.com} where it is also possible to participate in socrative sessions via the web.  Socrative also provides free iOS and Android apps for students to use. You can find them on the respective app stores or get direct links at \url{https://socrative.com/apps/}.
+\begin{center}
+\begin{tabular}{ll}
+\(\bullet\) Review of Python fundamentals & \(\bullet\) Object-Oriented Design Basics and Patterns\\
+\(\bullet\) Experimental and Asymptotic Algorithm Analysis & \(\bullet\) Recursion\\
+\(\bullet\) Arrays and Sequence Data Types & \(\bullet\) Stacks, Queues, Deques, and Priority Queues\\
+\(\bullet\) Abstract Data Types & \(\bullet\) Linked Data Structures\\
+\(\bullet\) Binary Search Trees and Tree Traversal Algorithms & \(\bullet\) Maps and Dictionaries\\
+\(\bullet\) Sorting, Searching, and Selection Algorithms & \(\bullet\) Graph Algorithms (as time allows)\\
+\end{tabular}
+\end{center}
+
+\subsection{Programming Environment}
+\label{sec:org16c7836}
+This course uses Python 3 and the \href{https://www.jetbrains.com/education/download/#section=pycharm-edu}{PyCharm-Educational} IDE.  All software
+for this course is available free of charge and can be found on the
+web if students wish to install it on their personal
+machines. The instructor cannot guarantee support for
+installing and using other development environments.
+
+\subsection{Student Learning Outcomes}
+\label{sec:org99410f2}
+This course covers a variety of knowledge areas as categorized by the
+ACM/IEEE-CS Task Force on Computing Curricula. Note that not all of
+these areas are introduced in this course; some are touched upon
+previously and others will be developed further in later courses. At
+the end of the course, students should achieve the following learning
+outcomes with the specific level of mastery:
+
+\small
+\begin{longtable}{|p{1.5in}|p{5.25in}|}
+\hline
+Knowledge Unit & Learning Outcome with Level of Mastery\\
+\hline
+\endfirsthead
+\multicolumn{2}{l}{Continued from previous page} \\
+\hline
+
+Knowledge Unit & Learning Outcome with Level of Mastery \\
+
+\hline
+\endhead
+\hline\multicolumn{2}{r}{Continued on next page} \\
+\endfoot
+\endlastfoot
+\hline
+Basic Analysis & \(\bullet\) In the context of specific algorithms, identify the characteristics of data and/or other\\
+ & conditions or assumptions that lead to different behaviors. [Familiarity]\\
+ & \(\bullet\) Explain what is meant by "best", "average", and "worst" case behavior\\
+ & of an algorithm. [Familiarity]\\
+ & \(\bullet\) In the context of specific algorithms, identify the characteristics of\\
+ & data and/or other conditions or assumptions that lead to different behaviors.\\
+ & \(\bullet\) Perform empirical studies to validate hypotheses about runtime stemming from\\
+ & mathematical analysis. Run algorithms on various input sizes and compare performance. [Assessment]\\
+ & \(\bullet\) Determine informally the time and space complexity of simple algorithms. [Usage]\\
+ & \(\bullet\) Understand the formal definition of big O. [Familiarity]\\
+ & \(\bullet\) List and contrast standard complexity classes. [Familiarity]\\
+ & \(\bullet\) Give examples that illustrate time-space trade-offs of algorithms. [Familiarity]\\
+ & \(\bullet\) Use big O notation formally to give asymptotic upper bounds on time and space complexity of algorithms. [Usage]\\
+\hline
+Algorithmic Strategies & \(\bullet\) Have facility mapping pseudocode to implementation, implementing examples of\\
+ & algorithmic strategies from scratch, and applying them to specific problems. [Familiarity]\\
+ & \(\bullet\) Use a divide-and-conquer algorithm to solve an appropriate problem. [Usage]\\
+\hline
+Fundamental Data & \(\bullet\) Implement simple search algorithms and explain the differences in their time complexities. [Usage, Assessment]\\
+Structures and & \(\bullet\) Discuss factors other than computational efficiency that influence\\
+Algorithms & the choice of algorithms, such as programming time, maintainability,\\
+ & and the use of application-specific patterns in the input data. [Familiarity]\\
+ & \(\bullet\) Be able to implement common quadratic and \(O(n \log n)\) sorting algorithms. [Usage]\\
+ & \(\bullet\) Demonstrate the ability to evaluate algorithms, to select from a range\\
+ & of possible options, to provide justification for that selection, and\\
+ & to implement the algorithm in a particular context. [Usage, Assessment]\\
+\hline
+Fundamentals & \(\bullet\) Explain the concept of modeling and the use of abstraction that\\
+ & allows the use of a machine to solve a problem. [Familiarity]\\
+\hline
+Basics of Counting & \(\bullet\) Perform computations involving modular arithmetic. [Usage]\\
+\hline
+Processing & \(\bullet\) Analyze simple problem statements to identify relevant information\\
+ & and select appropriate processing to solve the problem. [Assessment]\\
+ & \(\bullet\) Identify the issues impacting correctness and efficiency of a computation [Familiarity]\\
+\hline
+Defensive Programming & \(\bullet\) Demonstrate the identification and graceful handling of error conditions. [Usage]\\
+\hline
+Graphs and Trees & \(\bullet\) Demonstrate different traversal methods for trees [and graphs], including\\
+ & pre, post, and in-order traversal of trees. [Usage]\\
+ & \(\bullet\) Model a variety of real-world problems in computer science using appropriate\\
+ & forms of [graphs and] trees, such as representing \ldots{} a hierarchical file system. [Usage]\\
+\hline
+Data Modeling & \(\bullet\) Describe the main concepts of the OO model such as object identity,\\
+ & type constructors, encapsulation, inheritance, polymorphism, and versioning. [Familiarity]\\
+\hline
+Object-Oriented & \(\bullet\) Compare and contrast the procedural and object-oriented approach. Understand\\
+Programming & both as defining a matrix of operations and variants. [Assessment]\\
+ & \(\bullet\) Use subclassing to design simple class hierarchies that allow code to be\\
+ & reused for distinct subclasses. [Usage]\\
+\hline
+Algorithms and Design & \(\bullet\) Determine whether a recursive or iterative solution is most appropriate for a problem. [Assessment]\\
+ & \(\bullet\) Implement a divide-and-conquer algorithm for solving a problem. [Usage]\\
+ & \(\bullet\) Apply the technique of decomposition to break a problem into smaller pieces. [Usage]\\
+ & \(\bullet\) Implement a coherent abstract data type, with loose coupling\\
+ & between components and behavior. [Usage]\\
+ & \(\bullet\) Discuss the importance of algorithms in the problem-solving process. [Familiarity]\\
+ & \(\bullet\) Discuss how a problem may be solved by multiple algorithms, each\\
+ & with different properties. [Familiarity]\\
+ & \(\bullet\) Implement, test, and debug simple recursive functions. [Usage]\\
+\hline
+Fundamental & \(\bullet\) Analyze and explain the behavior of simple problems involving the fundamental\\
+Programming Concepts & programming constructs. [Assessment]\\
+ & \(\bullet\) Identify the base case and the general case of a recursively-defined\\
+ & problem. [Assessment]\\
+\hline
+Fundamental & \(\bullet\) Discuss the appropriate use of built-in data structures. [Familiarity]\\
+Data Structures & \(\bullet\) Describe common applications for each data structure in the topic list. [Familiarity]\\
+ & \(\bullet\) Write programs that use each of the following data structures: arrays, strings,\\
+ & linked lists, stacks, queues, sets, and maps. [Usage]\\
+ & \(\bullet\) Compare alternative implementations of data structures with respect to\\
+ & performance. [Assessment]\\
+ & \(\bullet\) Choose the appropriate data structures for modeling a given problem. [Assessment]\\
+\hline
+Development Methods & \(\bullet\) Trace the execution of a variety of code segments and write summaries of their\\
+ & computations. [Assessment]\\
+ & \(\bullet\) Apply a variety of strategies to the testing and debugging of simple\\
+ & programs. [Usage]\\
+ & \(\bullet\) Construct and debug programs using the standard libraries available with\\
+ & the chosen programming language. [Usage]\\
+ & \(\bullet\) Apply consistent documentation and program style standards that contribute to\\
+ & the readability and maintainability of software.\\
+\hline
+Software Construction & \(\bullet\) Construct models of the design of a simple software system that are appropriate\\
+ & for the paradigm used to design it. [Usage]\\
+\hline
+Professional Communication & \(\bullet\) Evaluate written technical documentation to detect problems of various kinds. [Assessment]\\
+\hline
+\end{longtable}
+\normalsize
 
 \section{Workload}
 % number of/details on midterms, finals, project, homeworks, quizes, etc
@@ -64,7 +214,7 @@ The course workload is as follows:
     Exams & 6 \\
     Projects & 2 \\
     Labs & 10 \\
-    Homework & 8
+    Homework & 8--10
   \end{tabular}
 \end{center}
 
@@ -78,7 +228,7 @@ Two larger scale programming projects will be undertaken during the semester. Th
 
 \subsection*{Homework}
 
-Students will be assigned a set of problems from each chapter of the book covered in the course. These problems are meant to guide reading, prepare the student for in class problems, and survey the material covered by the exam. Each student will turn in their own set of solutions.
+Homework will consist of exercises from the textbook. Programming problems should be done and tested on a computer. Non-programming questions can be hand written or typed. In both cases, printed copies of the solutions are due in-class on the day the day they appear on the calendar.
 
 \subsection*{Labs}
 
@@ -155,31 +305,59 @@ In general, assignments are due at the specified time and no late assignments wi
 
 This course is designed around the assumption that students \textit{engage in new ideas before they're covered in class meetings}.  This means doing assigned reading, taking a stab at homework problems, and as a result coming to class and lab with some understand about a new idea or, just as likely, with a host of questions about something encountered in the reading and homework. Not attending class, skipping lab, and putting off work to the point that an extension is needed are signs that a student isn't holding up their end of the bargain and is not prepared to participate in class.
 
+\subsection{Academic Honesty}
+
+From the Monmouth College Academic Honesty Policy:
+\begin{quote}
+  ``We view academic dishonesty as a threat to the integrity and intellectual mission of our institution. Any breach of the academic honesty policy - either intentionally or unintentionally - will be taken seriously and may result not only in failure in the course, but in suspension or expulsion from the college. It is each student’s responsibility to read, understand and comply with the general academic honesty policy at Monmouth College, as defined here in the Scots Guide, and to the specific guidelines for each course, as elaborated on the professor’s syllabus.''
+
+  ``The following areas are examples of violations of the academic honesty policy:
+  \begin{enumerate}
+  \item Cheating on tests, labs, etc;
+  \item Plagiarism, i.e., using the words, ideas, writing, or work of another without giving appropriate credit;
+  \item Improper collaboration between students, i.e., not doing one’s own work on outside assignments specified as group projects by the instructor;
+  \item Submitting work previously submitted in another course, without previous authorization by the instructor.''
+  \end{enumerate}
+
+  ``Please note that this list is not intended to be exhaustive.''
+\end{quote}
+
+The complete Monmouth College Academic Honesty Policy can be found on the College web page by clicking on ``Student Life'' then on ``Scot’s Guide'' in the navigation bar to the left, then ``Academic Regulations'' in the navigation bar at the left.  Or you can visit the web page directly by typing in this URL: \url{https://ou.monmouthcollege.edu/life/residence-life/scots-guide/academic-regulations.aspx}
+
+In this course, any violation of the academic honesty policy will have varying consequences depending on the severity of the infraction as judged by the instructor. Minimally, a violation will result in an``F'' or 0 points on the assignment in question. Additionally, the student’s course grade may be lowered by one letter grade. In severe cases, the student will be assigned a course grade of ``F'' and dismissed from the class. All cases of academic dishonesty will be reported to the Associate Dean who may decide to recommend further action to the Admissions and Academic Status Committee, including suspension or dismissal. It is assumed that students will educate themselves regarding what is considered to be academic dishonesty, so excuses or claims of ignorance will not mitigate the consequences of any violations.
+
+\section{Accessibility}
+
+Student Success \& Accessibility Services offers FREE resources to assist Monmouth College students with their academic success. Programs include Supplemental Instruction for select classes, Drop-In and appointment tutoring, and individual Academic Coaching. Our office is here to help all students excel academically, since all students can work toward better grades, practice stronger study skills, and manage their time better.
+
+If you have a disability or had academic accommodations in high school or another college, you may be eligible for academic accommodations at Monmouth College under the Americans with Disabilities Act (ADA). Monmouth College is committed to equal educational access. To discuss any of the services offered, please call or meet with Robert Crawley, Interim Director of Student Success \& Accessibility Services.  SSAS is located in the new ACE space on the first floor of the Hewes Library, opposite Einstein’s Bros Bagels. They can be reached at 309-457-2257 or via email at: ssas@monmouthcollege.edu.
+
+
+
 \subsection{Calendar}
 
 \textit{This calendar is subject to change based on the circumstances of the course.} A detailed, day-by-day calendar of reading requirements and expected exam dates can be found on the course website.
 
 \begin{center}
-\begin{tabular}{llll}
-\underline{Week} & \underline{Dates} & \underline{Assignments Due} & \underline{Chapter(s)}\\
-1 & 1/16 --- 1/17 & &   \\
-2 & 1/20 --- 1/24 &  &  \\
-3 & 1/27 --- 1/31 & &  \\
-4 & 2/3 --- 2/7 & &  \\
-5 & 2/10 --- 2/14 & &\\
-6 & 2/17 --- 2/21 & &  \\
-7 & 2/24 --- 2/28 & &  \\
-8 & 3/2 --- 3/5 &   SPRING BREAK (F) &\\
+\begin{tabular}{lllll}
+\underline{Week} & \underline{Dates} & \underline{Notes} & \underline{Assignments Due} & \underline{Chapter(s)}\\
+1 & 1/16 --- 1/17 & &  & 1  \\
+2 & 1/20 --- 1/24 &  & Lab 1 & 1 \\
+3 & 1/27 --- 1/31 & & Lab 2. Homework 1 (F). & 1,2 \\
+4 & 2/3 --- 2/7 & &   Homework 2 (W). Lab 3. & 2,3 \\
+5 & 2/10 --- 2/14 & & Exam 1 (M). Lab 4. & 3\\
+6 & 2/17 --- 2/21 & & Homework 3(M).  & 4 \\
+7 & 2/24 --- 2/28 & & Exam 2 (M). Project 1 (F). & 5 \\
+8 & 3/2 --- 3/5 &  SPRING BREAK (F) &  Lab 5. & 5 \\
 & 3/9 --- 3/13 &  SPRING BREAK & \\
-9 & 3/16 --- 3/20 &  &\\
-10 & 3/23 --- 3/27 & & \\
-11 & 3/30 --- 4/3 & & \\
-12 & 4/6 --- 4/10 & EASTER (F)  & \\
-13 & 4/13 --- 4/17 & EASTER (M). & \\
-14 & 4/20 --- 4/24 & SCHOLAR'S DAY (Tu).  & \\
-15 & 4/27 --- 5/1 &  &  \\
-16 & 5/4 --- 5/8 & READING DAY (Th) & \\
-Final's Week &  &  &  \\
+9 & 3/16 --- 3/20 & & Lab 6. Homework 4. & 6\\
+10 & 3/23 --- 3/27 & & Lab 7. Homework 5. & 6,7\\
+11 & 3/30 --- 4/3 & & Exam 3. Lab 8 & 7,8\\
+12 & 4/6 --- 4/10 & EASTER (F) & Exam 4. Homework 6. Lab 9 & 8 \\
+13 & 4/13 --- 4/17 & EASTER (M).& Homework 7 & 9,10 \\
+14 & 4/20 --- 4/24 & SCHOLAR'S DAY (Tu). & Exam 5. Project 2 & 9,10 \\
+15 & 4/27 --- 5/1 & & Lab 10 & 12 \\
+16 & 5/4 --- 5/8 & READING DAY (Th) & Homework 8. Exam 6 (F,3-6pm) & 12
 \end{tabular}
 \end{center}
 
