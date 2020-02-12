@@ -12,4 +12,5 @@ Below is a master list of the homework assignments. Homework should be an indivi
 | Due Date | | Problems |
 |:----: | :----: | :----: |
 |1/31  | | R-1.1,4,7,8,9,10,11.C-1.22 |
-| | | | | |
+| | | |
+|2/7 | | R-2.4 to R-2.8, R-2.16 |
