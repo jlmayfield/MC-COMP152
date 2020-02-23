@@ -1,9 +1,9 @@
 ---
 layout: page
 title: COMP151 - Homework 3
-permalink: /teaching/COMP151/homework/homework3
+permalink: /teaching/COMP151/homework/
+mathjax: true
 ---
-<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 
 <h3 align="center">
  Due in-class on 2/28
@@ -16,12 +16,14 @@ permalink: /teaching/COMP151/homework/homework3
   3. If starting at 1, how many times would you need to double up to get to a value that is bigger than 1011?
   4. If starting at 1, how many times would you need to double up to get to a value that is bigger than 92?
   5. Fill in the following table (don't use a calculator):
-  | $n$ | $\lfloor \log_2{n} \rfloor$ | $\lceil \log_2{n} \rceil$ |
-  | :--- | :---- | :--- |
-  | 25 | | |
-  | 195 | | |
-  | 15300 | | |
-  | 95127 | | |
+
+| $$n$$ | $$\lfloor \log_2{n} \rfloor$$ | $$\lceil \log_2{n} \rceil$$ |
+| :--- | :---- | :--- |
+| 25 | | |
+| 195 | | |
+| 15300 | | |
+| 95127 | | |
+
 3. What is the time complex of the following code fragments? For each fragment the variable *alist* is list data.  
   1.
   ```python
