@@ -1,7 +1,7 @@
 ---
 layout: page
 title: COMP151 - Homework 3
-permalink: /teaching/COMP151/homework/
+permalink: /teaching/COMP151/homework/homework3
 mathjax: true
 ---
 
@@ -40,5 +40,5 @@ mathjax: true
   ```python
   for i in range(0,len(alist)):
      for j in range(i,len(alist)):
-       ...
+        ...
   ```
