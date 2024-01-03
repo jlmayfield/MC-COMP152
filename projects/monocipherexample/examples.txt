@@ -1,0 +1,67 @@
+PLAINTEXT:
+This project should be a lot of fun. It's worth ten percent of your final grade.
+You have two weeks to do it. Lab time is not enough to get it done.
+Do not over-procrastinate. Please.
+
+KEY SEQUENCE GENERATION:
+keyword: project
+sequence:  PROJECTABDFGHIKLMNQSUVWXYZ
+shift -12: HIKLMNQSUVWXYZPROJECTABDFG
+reverse:   GFDBATCEJORPZYXWVUSQNMLKIH
+
+KEY:
+plain:  abcdefghijklmnopqrstuvwxyz
+cipher: GFDBATCEJORPZYXWVUSQNMLKIH
+
+Prepared Plaintext:
+thisprojectshouldbealotoffunitsworthtenpercentofyourfinal
+gradeyouhavetwoweekstodoitlabtimeisnotenoughtogetitdonedo
+notoverprocrastinateplease
+
+CIPHERTEXT:
+QEJSWUXOADQSEXNPBFAGPXQXTTNYJQSLXUQEQAYWAUDAYQXTIXNUTJYGP
+CUGBAIXNEGMAQLXLAARSQXBXJQPGFQJZAJSYXQAYXNCEQXCAQJQBXYABX
+YXQXMAUWUXDUGSQJYGQAWPAGSA
+
+Prepared Ciphertext
+QEJSW UXOAD QSEXN PBFAG PXQXT
+TNYJQ SLXUQ EQAYW AUDAY QXTIX
+NUTJY GPCUG BAIXN EGMAQ LXLAA
+RSQXB XJQPG FQJZA JSYXQ AYXNC
+EQXCA QJQBX YABXY XQXMA UWUXD
+UGSQJ YGQAW PAGSA
+
+DECIPHERED CIPHERTEXT:
+thisp rojec tshou ldbea lotof
+funit swort htenp ercen tofyo
+urfin algra deyou havet wowee
+kstod oitla btime isnot enoug
+htoge titdo nedon otove rproc
+rasti natep lease
+
+
+Single Letter Frequency Analysis (with plain text equivalents)
+140 23
+X/o 19
+Q/t 18
+A/e 17
+Y/n 9
+J/i 8
+U/r 8
+G/a 8
+S/s 7
+E/h 5
+N/u 5
+P/l 5
+B/d 5
+W/p 4
+T/f 4
+D/c 3
+L/w 3
+C/g 3
+F/b 2
+I/y 2
+M/v 2
+O/j 1
+R/k 1
+Z/m 1
