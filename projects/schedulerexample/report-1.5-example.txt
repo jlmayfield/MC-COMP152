@@ -1,0 +1,6 @@
+Scheduler Simulation Report
+
+Jobs Executed: 4
+Minimum Wait: 0
+Maximum Wait: 13
+Average Wait: 5

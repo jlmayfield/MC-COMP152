@@ -1,0 +1,8 @@
+Scheduler Simulation Report
+
+Jobs Executed: 4
+
+FinishedJob(start=1,complete=6,length=5,priority=0)
+FinishedJob(start=4,complete=16,length=10,priority=-10)
+FinishedJob(start=3,complete=23,length=7,priority=2)
+FinishedJob(start=100,complete=105,length=5,priority=2)
