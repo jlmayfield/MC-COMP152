@@ -11,7 +11,7 @@
 
 \title{Syllabus \\ COMP 152 \\ Data Structures and Algorithms}
 \author{  }
-\date{Spring 2022}
+\date{Spring 2024}
 
 \begin{document}
 \maketitle
@@ -21,12 +21,12 @@
 \item \textbf{Where: }
 \begin{itemize}
 \item Class: Center for Science and Business (CSB), Room 323
-\item Lab: Center for Science and Business (CSB), Room 323
+\item Lab: Center for Science and Business (CSB), Room 309
 \end{itemize}
 \item \textbf{When: }
 \begin{itemize}
   \item Class: MWF 8--8:50am
-  \item Lab: Tu 2--3:50pm
+  \item Lab: W 2--3:50pm
 \end{itemize}
 \item \textbf{Instructor: } Logan Mayfield
 \begin{itemize}
@@ -34,7 +34,7 @@
 \item \textit{Phone: } 309-457-2200 % chktex 8
 \item \textit{Website: } \url{http://jlmayfield.github.io/}
 \item \textit{Email: } lmayfield \textit{at} monmouthcollege \textit{dot} edu
-\item \textit{Office Hours: }  MW 2-3pm, Th 9:30-10:30am. By appointment.
+\item \textit{Office Hours: }  MWF 9-10am. Tu 1-2pm. Th 10-11am. By appointment.
 \end{itemize}
 \item \textbf{Website: } \url{http://jlmayfield.github.io/teaching/COMP152/}
 \item \textbf{Credits: } 1 course credit
@@ -64,7 +64,7 @@ Goodrich, Michael T. and Tamassia, Robert and Goldwasser, Michael H. \underline{
 
 \subsection{Topics}
 \label{sec:org302b48c}
-The course aims to cover chapters 1-8, parts of chapters 9-10,
+The course aims to cover chapters 1-8, parts of chapters 9-11,
 chapter 12, and parts of chapter 14 of the text. This includes, but is
 not limited to:
 
@@ -81,226 +81,166 @@ not limited to:
 
 \subsection{Programming Environment}
 \label{sec:org16c7836}
-This course uses \url{https://replit.com/} for all programming assignments. The site's educational and collaborative coding environments allows group work and real-time debugging help from your
-instructor to happen whether we're in-person or remote.
+Students should make every effort to setup a programming environment on their personal computer.  If this is not possible
+or desirable, then a programming environment will be made available on campus computers. 
 
-\subsection{Student Learning Outcomes}
-\label{sec:org99410f2}
-This course covers a variety of knowledge areas as categorized by the
-ACM/IEEE-CS Task Force on Computing Curricula. Note that not all of
-these areas are introduced in this course; some are touched upon
-previously and others will be developed further in later courses. At
-the end of the course, students should achieve the following learning
-outcomes with the specific level of mastery:
+\begin{itemize}
+\item \textit{Language:} Python - \url{https://www.python.org/downloads/} 
+\item \textit{Development Environment:} VS Code \url{https://code.visualstudio.com/}
+\item \textit{Version Control and Assignment Management:} Git \url{https://git-scm.com/downloads} and Github Classroom \url{https://classroom.github.com/}
+\end{itemize}
 
-\small
-\begin{longtable}{|p{1.5in}|p{5.25in}|}
-\hline
-Knowledge Unit & Learning Outcome with Level of Mastery\\
-\hline
-\endfirsthead
-\multicolumn{2}{l}{Continued from previous page} \\
-\hline
+The language and version control system are non-negotiable. Everyone must use them. You are welcome to explore 
+development environments besides VS Code, but you're likely going to be on your own if you run into installation 
+and configuration problems. 
 
-Knowledge Unit & Learning Outcome with Level of Mastery \\
-
-\hline
-\endhead
-\hline\multicolumn{2}{r}{Continued on next page} \\
-\endfoot
-\endlastfoot
-\hline
-Basic Analysis & \(\bullet\) In the context of specific algorithms, identify the characteristics of data and/or other\\
- & conditions or assumptions that lead to different behaviors. [Familiarity]\\
- & \(\bullet\) Explain what is meant by "best", "average", and "worst" case behavior\\
- & of an algorithm. [Familiarity]\\
- & \(\bullet\) In the context of specific algorithms, identify the characteristics of\\
- & data and/or other conditions or assumptions that lead to different behaviors.\\
- & \(\bullet\) Perform empirical studies to validate hypotheses about runtime stemming from\\
- & mathematical analysis. Run algorithms on various input sizes and compare performance. [Assessment]\\
- & \(\bullet\) Determine informally the time and space complexity of simple algorithms. [Usage]\\
- & \(\bullet\) Understand the formal definition of big O. [Familiarity]\\
- & \(\bullet\) List and contrast standard complexity classes. [Familiarity]\\
- & \(\bullet\) Give examples that illustrate time-space trade-offs of algorithms. [Familiarity]\\
- & \(\bullet\) Use big O notation formally to give asymptotic upper bounds on time and space complexity of algorithms. [Usage]\\
-\hline
-Algorithmic Strategies & \(\bullet\) Have facility mapping pseudocode to implementation, implementing examples of\\
- & algorithmic strategies from scratch, and applying them to specific problems. [Familiarity]\\
- & \(\bullet\) Use a divide-and-conquer algorithm to solve an appropriate problem. [Usage]\\
-\hline
-Fundamental Data & \(\bullet\) Implement simple search algorithms and explain the differences in their time complexities. [Usage, Assessment]\\
-Structures and & \(\bullet\) Discuss factors other than computational efficiency that influence\\
-Algorithms & the choice of algorithms, such as programming time, maintainability,\\
- & and the use of application-specific patterns in the input data. [Familiarity]\\
- & \(\bullet\) Be able to implement common quadratic and \(O(n \log n)\) sorting algorithms. [Usage]\\
- & \(\bullet\) Demonstrate the ability to evaluate algorithms, to select from a range\\
- & of possible options, to provide justification for that selection, and\\
- & to implement the algorithm in a particular context. [Usage, Assessment]\\
-\hline
-Fundamentals & \(\bullet\) Explain the concept of modeling and the use of abstraction that\\
- & allows the use of a machine to solve a problem. [Familiarity]\\
-\hline
-Basics of Counting & \(\bullet\) Perform computations involving modular arithmetic. [Usage]\\
-\hline
-Processing & \(\bullet\) Analyze simple problem statements to identify relevant information\\
- & and select appropriate processing to solve the problem. [Assessment]\\
- & \(\bullet\) Identify the issues impacting correctness and efficiency of a computation [Familiarity]\\
-\hline
-Defensive Programming & \(\bullet\) Demonstrate the identification and graceful handling of error conditions. [Usage]\\
-\hline
-Graphs and Trees & \(\bullet\) Demonstrate different traversal methods for trees [and graphs], including\\
- & pre, post, and in-order traversal of trees. [Usage]\\
- & \(\bullet\) Model a variety of real-world problems in computer science using appropriate\\
- & forms of [graphs and] trees, such as representing \ldots{} a hierarchical file system. [Usage]\\
-\hline
-Data Modeling & \(\bullet\) Describe the main concepts of the OO model such as object identity,\\
- & type constructors, encapsulation, inheritance, polymorphism, and versioning. [Familiarity]\\
-\hline
-Object-Oriented & \(\bullet\) Compare and contrast the procedural and object-oriented approach. Understand\\
-Programming & both as defining a matrix of operations and variants. [Assessment]\\
- & \(\bullet\) Use subclassing to design simple class hierarchies that allow code to be\\
- & reused for distinct subclasses. [Usage]\\
-\hline
-Algorithms and Design & \(\bullet\) Determine whether a recursive or iterative solution is most appropriate for a problem. [Assessment]\\
- & \(\bullet\) Implement a divide-and-conquer algorithm for solving a problem. [Usage]\\
- & \(\bullet\) Apply the technique of decomposition to break a problem into smaller pieces. [Usage]\\
- & \(\bullet\) Implement a coherent abstract data type, with loose coupling\\
- & between components and behavior. [Usage]\\
- & \(\bullet\) Discuss the importance of algorithms in the problem-solving process. [Familiarity]\\
- & \(\bullet\) Discuss how a problem may be solved by multiple algorithms, each\\
- & with different properties. [Familiarity]\\
- & \(\bullet\) Implement, test, and debug simple recursive functions. [Usage]\\
-\hline
-Fundamental & \(\bullet\) Analyze and explain the behavior of simple problems involving the fundamental\\
-Programming Concepts & programming constructs. [Assessment]\\
- & \(\bullet\) Identify the base case and the general case of a recursively-defined\\
- & problem. [Assessment]\\
-\hline
-Fundamental & \(\bullet\) Discuss the appropriate use of built-in data structures. [Familiarity]\\
-Data Structures & \(\bullet\) Describe common applications for each data structure in the topic list. [Familiarity]\\
- & \(\bullet\) Write programs that use each of the following data structures: arrays, strings,\\
- & linked lists, stacks, queues, sets, and maps. [Usage]\\
- & \(\bullet\) Compare alternative implementations of data structures with respect to\\
- & performance. [Assessment]\\
- & \(\bullet\) Choose the appropriate data structures for modeling a given problem. [Assessment]\\
-\hline
-Development Methods & \(\bullet\) Trace the execution of a variety of code segments and write summaries of their\\
- & computations. [Assessment]\\
- & \(\bullet\) Apply a variety of strategies to the testing and debugging of simple\\
- & programs. [Usage]\\
- & \(\bullet\) Construct and debug programs using the standard libraries available with\\
- & the chosen programming language. [Usage]\\
- & \(\bullet\) Apply consistent documentation and program style standards that contribute to\\
- & the readability and maintainability of software.\\
-\hline
-Software Construction & \(\bullet\) Construct models of the design of a simple software system that are appropriate\\
- & for the paradigm used to design it. [Usage]\\
-\hline
-Professional Communication & \(\bullet\) Evaluate written technical documentation to detect problems of various kinds. [Assessment]\\
-\hline
-\end{longtable}
-\normalsize
-
+  
 \section{Workload}
 % number of/details on midterms, finals, project, homeworks, quizes, etc
 
-The course workload is as follows:
-\begin{center}
-  \begin{tabular}{ll}
-    \underline{Category} & \underline{Number of Assignments} \\
-    Exams & 7 \\
-    Projects & 2 \\
-    Labs & 10 \\
-    Homework & 8
-  \end{tabular}
-\end{center}
 
-\subsection*{Exams}
-
-All exams are weighted equally. There is no midterm or final exam in the sense that the exams are worth more than other exams or that they will necessarily take longer than other exams.  Exams will generally focus on material covered since the previous exam but will be in some sense cumulative due to the nature of programming. Unless stated otherwise, assume that exams will be pencil and paper and that computers will not be available during the exam period.
-
-\subsection*{Projects}
-
-Two larger scale programming projects will be undertaken during the semester. These projects will be individual efforts and will require much more effort than the programs written in lab or as part of homework. Students can expect to have two weeks from the time of the project assignment to complete the project. One or more lab periods will be dedicated to work on the project. It is highly recommend that all students make ample use of the time given on these projects.
-
-\subsection*{Homework}
-
-Homework will consist of exercises from the textbook. Programming problems should be done, tested, and submitted via replit. Non-programming questions can be hand written or typed. All assignments are due at the start of class on the due date.
-
-\subsection*{Labs}
-
-Students will be placed into groups of two or three for each lab. Work will be done using \textit{paired programming} facilitated by replit, a programming practice where each member of the group takes turns typing while the other group member helps look for typos, bugs, and otherwise assists in the design of the code. Each group will submit their work at the end of the lab period regardless of the overall completeness of the assignment. The goal is to make good constructive progress on the assignment. Full credit can and will be given on unfinished work so long as it can be executed to complete some portion of the given task, shows evidence of purposeful progress, and the group made full use of the lab period.
-
-\subsection{Course Engagement Expectations}
-
-The weekly workload for this course will vary by student but on average should be about 13 hours per week.  The follow tables provides a rough estimate of the distribution of this time over different course components.
+Time spent on work for this course will likely vary by student and will, in general, vary week to week. On average, this course should require about 13 hours of work per week per student.  The following table provides a rough estimate of the distribution of this time over different course components.
 \begin{center}
 \begin{tabular}{ll}
 \underline{Assignment Type} & \underline{Time/week} \\
-Lectures+Labs       & 6 hours/week \\
-Homework          & 1 hours/week \\
-Exam Study Time    & 1 hours/week \\
-Projects          & 3 hours/week \\
-Reading &  2 hours/week \\
+Class Time \& Labs       & 5 hours/week \\
+Self-Study \& Reading & 2-3 hours/week \\
+Projects           & 3 hours/week \\
+Homework Problems   & 1-2 hours/week \\
 \bottomrule
- & 13 hours/week
+ & 11-13 hours/week
 \end{tabular}
 \end{center}
 
 
-\section{Grades}
-
-This course uses a standard grading scale where percentage grades translate to letter grades as follows:
-
-\begin{center}
-\begin{small}
-\begin{tabular}{lcl}
-\underline{Score} & & \underline{Grade} \\
-94--100 & & A \\
-90--93 & & A- \\
-88--89 & & B+ \\
-82--87 & & B \\
-80--81 & & B- \\
-78--79 & & C+ \\
-72--77 & & C \\
-70--71 & & C- \\
-68--69 & & D+ \\
-62--67 & & D \\
-60--61 & & D- \\
-0--59 & & F
-\end{tabular}
-\end{small}
-\end{center}
-
-
-Students are always welcome to challenge a grade that they feel is unfair or calculated incorrectly.  Mistakes made in the student's favor will never be corrected to lower a grade.  Mistakes not in the student's favor favor will be corrected.  \textit{Basically, after the initial grading, a score can only go up as the result of a challenge.}
-
-
-
-\subsection{Grade Weights}
-
-The final grade is based on a weighted average of particular assignment categories.  Students should be able to estimate your current grade based on your scores and these weights, but you may always visit the instructor \textit{outside of class time} to discuss your current standing and check on some or all of the current course grade.
-
+The course uses fairly standard types of assignments: labs, homework problems, exams, projects, etc. The number of such assignments you can expect to complete is given below along with individual assignment type descriptions.
 \begin{center}
   \begin{tabular}{ll}
-  \underline{Category} & \underline{Weight} \\
-    Exams & 49\% \\ %7 each
-    Projects & 20\% \\ %10 each
-    Homework & 16\% \\ %2 each
-    Labs & 10\% \\ %1 each
-    Participation & 5\%
+    \underline{Category} & \underline{Number of Assignments} \\
+    Projects & 2 \\
+    Exams & 5--7 \\    
+    Labs & 8--10 \\
+    Homework & 4--6 \\
+    Portfolio Review \& Self Evaluation Meetings & 4--5 \\
   \end{tabular}
 \end{center}
 
-\subsection{Participation, Attendance, \& Late Assignments}
+\subsection*{Labs}
 
-%This course will make almost daily use of Socrative for in-class question and answer sessions. Questions will cover portions of the text that were assigned as reading and will range from simple checks to see if the reading was done to more challenging questions that follow from a close examination of the reading.  For the most part, the only requirement is to provide an answer to every question and participate in the resultant discussions.  On occasion, questions will be evaluated for their correctness and performance on these questions will also factor into the course participation grade.  Students who do the reading and start the homework as soon as possible will have very little to worry about.
+Labs are hands on, active learning periods. You'll dive into new ideas and new techniques
+through programming problems done with a partner and with the instructor there to help.
+Where other assignments are more about reinforcement and assessment of things previously learned,
+lab time is a time to dive into new things. \textit{They goal of a lab is to explore, 
+to play, to break things then fix them, to ask questions, and to otherwise uncover everything you
+can about a new corner of programming.}
 
-%While there is no strict attendance policy, the course participation grade is based in large part on engagement with socrative. Absent students cannot participate in socrative sessions.  Students should avoid unexcused absences, as defined in the college-wide absence policy. Whenever possible, let the instructor know of the absence before it occurs. When unexcused absences do occur, it is the student's responsibility to make up for the lost class time and to seek the permission of the instructor to hand-in or complete assignments that are late due to an unexcused absence.
+Expect to do labs on a weekly basis. They will typically take not more than the two hour lab period
+and will never require that you work on them outside of that lab period. We'll typically go over
+lab problems in detail during the class period immediately following the lab.
 
-As a rule, assignments are due at the specified time and no late assignments will be accepted unless an extension was requested prior to the due date. There are, of course, exceptions to this rule and students needing extra time can always contact the instructor for an extension. Do not just give up and eat a zero for the assignment. Ever. There is no penalty in asking for an extension nor is there a limit on extensions.  That being said, there is no guarantee an extension will be given without legitimate need.
+\subsection*{Homework}
 
-This course is designed around the assumption that students \textit{engage in new ideas before they're covered in class meetings}.  This means doing assigned reading, taking a stab at homework problems, and as a result coming to class and lab with some understand about a new idea or, just as likely, with a host of questions about something encountered in the reading and homework. Not attending class, skipping lab, and putting off work to the point that an extension is needed are signs that a student isn't holding up their end of the bargain and is not prepared to participate in class.
+\textit{Homework is practice. It's drills. It's activities designed largely to reinforce and strengthen
+your understanding of material learned through reading, through class time, and through lab.}
+Homework lets you gut check what you think you know and how well you know it. They afford to you the
+time to do the work and then check that work using other references, including classmates. They are meant
+to be low stakes assignments.  Just don't confuse low stakes with low importance. Practice,
+repetition, and reinforcement through homework is important for learning. It is what gets you ready for
+exams, projects, and programming outside of this class.
+
+Homework assignments will typically involve completing problems in the online text as well as other
+problems related to the current material. The class will work-on and discuss problems of interest between
+the assignment and due date of the problem set. A review of homework problems will typically proceed exams.
+
+\subsection*{Exams}
+
+Exams are meant to test your understanding of and ability to apply ideas covered previously in the course.
+They are a gut check the current state of your learning. They let you answer the question,
+``Do I know the material as well as I think I know the material?''  Compared to homework, they are higher
+stakes assessments of your learning because you typically lack the safety net that is your notes, the text,
+and other references.
+
+For the most part, exams will be done in class or in lab and will be announced ahead of time in order
+for you to prepare.  Expect these exams to take all or most of a class period and involve multiple
+questions or a multi-part problem. On rare occasions we may have small pop-exams that are unannounced,
+involve one or two quick questions, and will only take up a small portion of the start of a class period.
+
+\subsection*{Projects}
+
+\textit{You should look at the projects like game day or the big performance. They are, in large part,
+what we're preparing for with other smaller assignments.} You should give them your best effort and a
+great deal of your time. You'll learn and grow the most as a programmer by really digging in and engaging
+in the projects and all of the challenges you'll face when working on them.
+
+Projects are large scale programming assignments done over the course of two weeks. They will
+draw on everything you've done and learned in the class up to that point. They will also typically
+involve some new ideas that you must navigate and integrate into your work. Some lab and class time
+will be used to work on the projects, but you should plan for the bulk of your work on them to take
+place outside of class and lab.
+
+
+\subsection*{Portfolio Review \& Self-Evaluation}
+
+Self-reflection and self-evaluation is a critical component of learning and vital to a growth mindset.
+We will keep a portfolio of the work you do throughout the semester. Much of this will be done automatically
+by our assignment managment and version control software. At regular intervals throughout the semester you will
+meet, one-on-one, with me to \textit{present your porfolio}, review items from your porfolio that best 
+guage how well you're doing at meeting the course goals and expectations, and discuss how that success maps to 
+a letter grade.  
+
+
+
+\section{Ungrading \& Final Grades}
+
+This class is largely ungraded. That means your assignments will not be graded for points and your final grade
+is not determined by a point-based, numerical grading system. You will get feedback on your work but you will
+see points on nothing. You don't earn points for doing work or getting something correct nor do you lose points
+for getting something wrong. We're here to learn. Doing the work is how we do that and getting things wrong
+some or most of the time is part of learning.
+
+\subsection{Self-Evaluation \& Final Course Grades}
+
+Throughout the semester you'll be asked to engage in regular self-evaluation. This process is described in
+detail in additional documentation. Part of the process includes you self-assigning a course grade based on
+your self-evaluation. Your self-evaluation and self-assigned grade are then discussed with me in a one-on-one
+meeting during which we'll agree upon your current grade. The key here is that \textit{your self-evaluation
+and self-assigned grade begins the conversation, not my assigned points.}
+
+Below are some general rules of thumb we'll try to stick to when talking about grades. They relate grades to
+course competency expectations and Monmouth College policy.
+\begin{itemize}
+  \item \textbf{A} - Exceeding course expectations.
+  \item \textbf{B} - Meeting and occasionally exceeding course expectations.
+  \item \textbf{C} - Meeting course expectations. \textit{This is the minimum grade required to continue on to COMP152. So, a C means you can be successful in a class that builds upon the things learned in this class.}
+  \item \textbf{C-} - Mostly meeting course expectations. \textit{This is the minium grade that counts towards a major.}
+  \item \textbf{D} - Occasionally meeting course expectations, but mostly not. \textit{Grades in the D range earn credit towards graduation but fall below GPA requirements.}
+  \item \textbf{F} - Did not meet course expectations.
+\end{itemize}
+
+My hope is that the self-evaluation and self-directed grading process provides a lot of flexibility in terms
+of how you can achieve success in this course and meet your grade goals. If you ever have questions or concerns
+about self-evaluations and grades, then I'm more more than willing to discuss them with you at any time.
+
+\subsubsection{Participation, Attendance, \& Timely Work}
+
+I do not have strict attendance and deadline policies, per se, but I do have clear expectations. These
+expectations are baked into the dispositional attribute of the course competencies. This attribute
+includes things like being \textit{professional, responsible, responsive, and self-directed.}
+
+As far as I'm concerned, signing up for this class means you agree to coming to class and lab,
+being on time for class and lab, doing assigned work and submitting it on time, and generally participating
+in all the class has to offer.  That being said, life happens and people have different priorities.
+You might need to miss class or extend a deadline.  So long as you communicate with me about it, as a
+professional would with a co-worker, then we won't have a problem. If you simply skip class without
+warning, always show up late, or regularly fail to do assigned work in a timely manner, then I expect that
+those failures to meet dispositional expectations to be reflected in your self-evaluation.
+
+There is one exception to my ``no grade-based policy'' on assignments and deadlines and that is the
+self-evaluations and reflections. The self-evaluation process is critical to this class and in no way
+optional. \textbf{If you fail attend the portfolio review meetings or always show up completely un-prepared
+then I reserve to give you a final grade of D or lower for the course.} You'll find I can be pretty relaxed
+about a lot of other assignments and deadlines, but I draw the line at the self-evaluation process.
+
 
 \subsection{Academic Honesty}
 
@@ -333,46 +273,28 @@ If you have a disability or had academic accommodations in high school or anothe
 
 \section{Calendar}
 
-
-The overall flow and organization of the course follows from the table below.
-\begin{center}
-\begin{tabular}{lll}
-\underline{Section} & \underline{Chapters Covered} & \underline{Assignments} \\
-Preliminaries & 1--2 & Labs 1--2, Homework 1, Exam 1. \\
-Math \& Analysis & 3 & Lab 3. Homework 2. Exam 2. \\
-Ground Floor & 4--5 & Lab 4--5. Homework 3. Exam 3. \\
-Algorithms & 12 & Homework 4. Exam 4. Project 1. \\
-ADTs & 6 & Lab 6. Homework 5. Exam 5. \\
-Data Structures & 7--8 & Lab 7--8. Homework 6. Exam 6. \\
-Data Structures \& Algorithms & 9--11,14 & Lab 9--10. Homework 7--8. Exam 7. Project 2.
-\end{tabular}
-\end{center}
-
-
-This plan maps to this semesters calendar as follows. \textit{This calendar is subject to change based on the circumstances of the course.} \textbf{Precise dates and other day-to-day details can be found on the course website.}
+\textit{This calendar is subject to change based on the circumstances of the course.} \textbf{Precise dates and other day-to-day details can be found on the course website.}
 
 \begin{center}
 \begin{tabular}{lllll}
 \underline{Week} & \underline{Dates} & \underline{Notes} & \underline{Assignments Due} & \underline{Chapter(s)}\\
-1 & 1/11 --- 1/14 & &  & 1  \\
-2 & 1/17 --- 1/21 &  & Homework 1. Lab 1. & 1,2 \\
-3 & 1/24 --- 1/28 & & Lab 2.  & 2,3 \\
-4 & 1/31 --- 2/4 & &  Lab 3. Exam 1. & 3 \\
-5 & 2/7 --- 2/11 & &  Lab 4. Homework 2. & 4\\
-6 & 2/14 --- 2/18 & & Lab 5. Exam 2.  & 4,5 \\
-7 & 2/21 --- 2/25 & & Homework 3. & 5,12 \\
-8 & 2/28 --- 3/4 &  SPRING BREAK (F) &  Homework 4. Exam 3. Project 1. & 12 \\
-& 3/7 --- 3/11 &  SPRING BREAK & \\
-9 & 3/14 --- 3/18 & & Lab 6. Exam 4. & 6\\
-10 & 3/21 --- 3/25 & & Lab 7. Homework 5. & 6,7\\
-11 & 3/28 --- 4/1 & & Lab 8. Exam 5. & 7,8\\
-12 & 4/4 --- 4/8 &  & Lab 9 & 8 \\
-13 & 4/11 --- 4/15 & EASTER (F) & Lab 10. Homework 6. Exam 6. & 9,10 \\
-14 & 4/18 --- 4/22 & EASTER (M). & Project 2 & 9,10 \\
-15 & 4/25 --- 4/29 & SCHOLAR'S DAY (Tu). & Homework 7. & 11 \\
-16 & 5/2 --- 5/6 & READING DAY (Th) & Homework 8. & 11,14 \\
-17 & 5/9 --- 5/11 &  & Exam 7 (Tu,11:30am-2:30pm) &
-
+1 & 1/17 --- 1/19 & & Lab 1. & 1 \\
+2 & 1/22 --- 1/26 &  & Lab 2. & 3  \\
+3 & 1/29 --- 2/2 & & Lab 3. Hwk 1. & 3,4 \\
+4 & 2/5 --- 2/9 & & Exam 1. Lab 4.  & 4 \\
+5 & 2/12 --- 2/16 & & Lab 5. Hwk 2. & 5, 2.3 \\
+6 & 2/19 --- 2/23 & Exam 2. Lab 6.  & 5,6 & \\
+7 & 2/26 --- 3/1 &  &  Hwk 3. Lab 7. Exam 3.  & 6 \\
+8 & 3/4 --- 3/8 & & & 7 \\
+& 3/11 --- 3/15 &  SPRING BREAK & \\
+9 & 3/18 --- 3/22 & & Hwk 4. & 7\\
+10 & 3/25 --- 3/29 & EASTER (F) & Project 1. & 8 \\
+11 & 4/1 --- 4/5 & EASTER (M) & Lab 8.   & 8,9\\
+12 & 4/8 --- 4/12 & & Lab 9 & 9 \\
+13 & 4/15 --- 4/19 & & Exam 4. & 12 \\
+14 & 4/22 --- 4/26 & SCHOLAR'S DAY (Tu). & Hwk 5. & 12 \\
+15 & 4/29 --- 5/3 & & Exam 5. Project 2. & \\
+16 & 5/6 --- 5/10 & READING DAY (Th).  & \textbf{EXAM 6. 5/10. 8-11 am} & 
 \end{tabular}
 \end{center}
 
