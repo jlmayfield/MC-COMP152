@@ -1,0 +1,137 @@
+\documentclass[10pt]{article}
+\usepackage{amsmath, amssymb, amsthm}
+\usepackage[mathscr]{euscript}
+\usepackage{setspace}
+\usepackage[pdftex]{graphicx}
+\usepackage{booktabs}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{minted}
+
+
+% Setting Margins
+\setlength{\textheight}{9in} \setlength{\topmargin}{-.5in}
+\setlength{\textwidth}{6.5in} \setlength{\oddsidemargin}{0in}
+\setlength{\evensidemargin}{0in}
+
+\title{COMP152 --- SP25 --- Lab 5 \\ Loop and Big-O Worksheet}
+\author{}
+\begin{document}
+\maketitle
+
+\thispagestyle{empty}
+\subsection*{Loops: While and For}
+
+For each loop shown below:
+\begin{itemize}
+    \item Determine \textit{exactly} (either a literal value or a function of $n$) how many times the $\ldots$ line will be executed.
+    \item Determine the Big-0 characterization of the loop. 
+    \item Translate to the equivalent while/for loop. This means a loop with a counter (i,j,k, etc.) that takes on the exact same sequence of values, in the same order, repeats the same number of times, and has the same Big-O characterization.
+\end{itemize}
+
+\begin{enumerate}
+    \item 
+    \begin{minted}{python3}
+    j = 2
+    while j < n:
+        ...
+        j += 3
+    \end{minted}
+    \vspace{2in}
+    \item
+    \begin{minted}{python3}
+    for i in range(0,n-1,n//3):
+        ...
+    \end{minted}
+    \newpage \thispagestyle{empty}
+    \item
+    \begin{minted}{python3}
+    k = n+5
+    while k >= 4:
+        ...
+        k -= 2
+    \end{minted}
+    \vspace{2in}
+    \item
+    \begin{minted}{python3}
+    for i in range(n):
+        for j in range(n-1,i-1,-1):
+            ...
+    \end{minted}
+    \vspace{3in}
+    \item 
+    \begin{minted}{python}
+       i = 0
+       while i<=(n-1):
+          for j in range(1,n,2):
+             ...
+        i += 2
+    \end{minted}
+\end{enumerate}
+\newpage \thispagestyle{empty}
+\subsection*{Big-O Analysis}
+
+Determine the Big-0 characterization of the worst case time for each of the following. Clearly identify/name the $n$ for each. 
+
+\begin{enumerate}
+    \item \begin{minted}{python3}
+        def foo(l : List[int]):
+            s = 0
+            for i in range(2**10):
+                k = 1
+                while k < len(l):
+                    s += l[k]
+                    k *= 2
+            return s
+    \end{minted}
+    \vspace{1.5in}
+
+    \item \begin{minted}{python3}
+        def foo(l : List[int], a : int, b : int):
+            k = []
+            for i in range(len(l)):
+                if a < l[i] < b:
+                    k.append(l[i])
+            return k
+    \end{minted}
+    \vspace{1.5in}
+
+    \item \begin{minted}{python3}
+        def foo(l : List[int],a : int, b : int):
+            i = 0
+            while i < len(l):
+               if a < l[i] < b:
+                  del l[i]
+                else:
+                  i += 1
+            return 
+    \end{minted}
+    \newpage \thispagestyle{empty}
+
+    \item \begin{minted}{python3}
+        def foo(l : List[int], k : int):
+            l.sort()
+            return l[len(s)-k:] 
+    \end{minted}
+    \vspace{2in}
+    \item \begin{minted}{python3}
+        def foo(l : List[int]):
+            for i in range(1,n):
+                j = i
+                while j>0 and l[j] < l[j-1]:
+                    l[j],l[j-1] = l[j-1],l[j]
+                    j -= 1
+            return 
+    \end{minted}
+    \vspace{2in}
+    \item \begin{minted}{python3}
+        def foo(l : List[int]):
+            i = 1
+            while i < len(l):
+                for j in range(0,len(l),i):
+                    l[j] = l[j]+l[j+2*i-1]
+                i *= 2
+            return         
+    \end{minted}
+\end{enumerate}
+
+\end{document}
